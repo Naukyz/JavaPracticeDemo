@@ -37,10 +37,8 @@ public class Solution {
         System.out.println(solution.lengthOfLongestSubstring("bbbbb"));
         System.out.println(solution.lengthOfLongestSubstring("pwwkew"));
     }
-}
 
-class Solution1 {
-    public int lengthOfLongestSubstring(String s) {
+    public int lengthOfLongestSubstring1(String s) {
         int n = s.length();
         int ans = 0;
         for (int i = 0; i < n; i++)
@@ -58,10 +56,8 @@ class Solution1 {
         }
         return true;
     }
-}
 
-class Solution2 {
-    public int lengthOfLongestSubstring(String s) {
+    public int lengthOfLongestSubstring2(String s) {
         int n = s.length();
         Set<Character> set = new HashSet<>();
         int ans = 0, i = 0, j = 0;
@@ -76,10 +72,8 @@ class Solution2 {
         }
         return ans;
     }
-}
 
-class Solution3 {
-    public int lengthOfLongestSubstring(String s) {
+    public int lengthOfLongestSubstring3(String s) {
         int n = s.length(), ans = 0;
         Map<Character, Integer> map = new HashMap<>(); // current index of character
         // try to extend the range [i, j]
@@ -92,10 +86,8 @@ class Solution3 {
         }
         return ans;
     }
-}
 
-class Solution4 {
-    public int lengthOfLongestSubstring(String s) {
+    public int lengthOfLongestSubstring4(String s) {
         int n = s.length(), ans = 0;
         int[] index = new int[128]; // current index of character
         // try to extend the range [i, j]
